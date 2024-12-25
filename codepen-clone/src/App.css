@@ -1,0 +1,37 @@
+/* CodeMirror Editor styling */
+.controlled-editor {
+  height: 70vh;
+  color: #fff;
+  background-color: #222;
+  border: none; /* Remove default border to avoid cursor issues */
+  padding: 0; /* Remove any internal padding */
+  margin: 0; /* Remove any external margin */
+}
+
+/* Hover effect for editor containers */
+.editor-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.CodeMirror-gutters {
+  background: #1d1e22 !important;
+}
+
+.CodeMirror-scroll {
+  background: #1d1e22 !important;
+  margin-left: 0 !important; /* Fix potential left margin issues */
+  padding: 0 !important; /* Fix any extra padding in the editor */
+  width: 100% !important; /* Ensure full width is used */
+  overflow: hidden !important; /* Prevent scrolling issues */
+}
+
+/* Output container style */
+iframe {
+  border-radius: 5px;
+}
+
+/* Global box shadow on output container */
+output-container {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
